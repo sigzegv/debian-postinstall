@@ -38,5 +38,5 @@ sudo git clone https://github.com/vinceliuice/Graphite-cursors && cd Graphite-cu
 
 # cleaning #gnome-shell-extension-prefs
 sudo apt remove -y vim-common 
-sudo apt autoremove -y
+sudo apt --purge autoremove -y
 cd ~
