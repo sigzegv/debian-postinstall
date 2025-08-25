@@ -6,6 +6,7 @@ sudo apt install -y nautilus-share gnome-shell-extension-manager
 sudo apt install -y gnome-shell-extension-user-theme gnome-shell-extension-appindicator
 
 # default settings
+gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
 gsettings set org.gnome.desktop.peripherals.touchpad two-finger-scrolling-enabled true
 gsettings set org.gnome.desktop.interface clock-show-weekday true
 gsettings set org.gnome.desktop.sound allow-volume-above-100-percent true
