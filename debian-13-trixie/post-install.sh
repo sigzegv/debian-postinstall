@@ -19,16 +19,6 @@ sudo apt-file update
 echo "vm.max_map_count=2147483642" | sudo tee -a /etc/sysctl.conf > /dev/null
 sudo sed -i -e 's/quiet/quiet splash/g' /etc/default/grub
 
-# refind
-sudo apt install -y refind
-sudo mkrlconf
-sudo mkdir /boot/efi/EFI/refind/themes
-sudo git clone https://github.com/sihann/refind-gruvbox-theme /boot/efi/EFI/refind/themes/refind-gruvbox-theme
-echo "include themes/refind-gruvbox-theme/theme.conf" | sudo tee -a /boot/efi/EFI/refind/refind.conf
-sudo sed -i -e 's/timeout 20/timeout 5/g' /boot/efi/EFI/refind/refind.conf
-sudo sed -i -e '0,/quiet/s//quiet splash/' /boot/refind_linux.conf
-sudo rm -rf /boot/efi/EFI/debian
-
 sudo plymouth-set-default-theme futureprototype
 sudo update-initramfs -u
 
