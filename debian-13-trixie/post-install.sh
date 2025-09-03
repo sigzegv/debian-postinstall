@@ -12,7 +12,7 @@ sudo touch $(ls -1 /boot/vmlinuz* | tail -n 1)
 # install useful packages
 sudo apt install -y g++ cmake pkg-config libfontconfig-dev git curl apt-file lua5.4
 sudo apt install -y gdebi xsel xclip libsass1 sassc dnsmasq python3 python3-venv
-sudo apt install -y numlockx neovim ffmpeg imagemagick hwinfo bat cabextract
+sudo apt install -y numlockx neovim ffmpeg imagemagick hwinfo bat cabextract flatpak
 
 sudo apt-file update
 
