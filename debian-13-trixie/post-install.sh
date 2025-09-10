@@ -16,6 +16,8 @@ sudo apt install -y numlockx neovim ffmpeg imagemagick hwinfo bat cabextract fla
 
 sudo apt-file update
 
+flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+
 echo "vm.max_map_count=2147483642" | sudo tee -a /etc/sysctl.conf > /dev/null
 sudo sed -i -e 's/quiet/quiet splash/g' /etc/default/grub
 
