@@ -2,7 +2,7 @@
 
 ## gnome section
 # packages
-sudo apt install -y nautilus-share gnome-shell-extension-manager
+sudo apt install -y nautilus-share gnome-shell-extension-manager eog
 sudo apt install -y gnome-shell-extension-user-theme gnome-shell-extension-appindicator gnome-software-plugin-flatpak
 
 flatpak install flathub io.github.swordpuffin.rewaita
